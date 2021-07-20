@@ -1,0 +1,55 @@
+on UpdateScore
+   if field "score"=10
+   then
+      put "you reached  10" into field  "textbox"
+   end if
+   if field "score"=30
+   then 
+      put "you reached  30"into field  "textbox"
+   end if
+   if field "score"=50
+   then
+      put "you reached  50"into field  "textbox"
+      
+   end if
+   
+   if field "score">0
+   then
+      subtract 1 from field "score"
+   else
+      answer "game over"
+   end if
+   save this stack
+
+
+end UpdateScore
+
+on UpdateScore2
+  
+   if field "score">0
+   then
+      subtract 1 from field "score"
+   else
+      answer "game over"
+   end if
+   save this stack
+   
+   
+end UpdateScore2
+
+on mouseDown
+   ChangeMyLook
+   UpdateScore2
+end mouseDown
+
+
+
+on ChangeMyLook
+   if field "score"  =50
+   then
+      put image "dog1.png "of card "imageBank" into image "myDog"
+   end if
+end ChangeMyLook
+   
+
+
