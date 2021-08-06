@@ -1,4 +1,4 @@
-1. ClickMe
+# ClickMe
 
 on UptateScore
    if field "score" > 0
@@ -99,8 +99,7 @@ end ShrinkItDown
       changeMyLook
       ShrinkItDown
    end mouseDown
-
- 2.StartOver
+# StartOver
 
 on startOver
    put 100 into field "score"
@@ -115,8 +114,7 @@ on mouseUp
    startOver
 end mouseUp
 
-3. SecondLevel
-
+# SecondLevel
 on MouseDown
    SecondLevel
 end MouseDown
